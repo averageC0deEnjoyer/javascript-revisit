@@ -1,3 +1,4 @@
+//test create method (just for exercise, not suggested)
 Array.prototype.cbTest = function (cb = (x) => x * 2) {
   let newArr = [];
   for (let i = 0; i < this.length; i++) {
@@ -18,5 +19,5 @@ function testFunc(city) {
     `hello my name is ${this.firstName} ${this.lastName} and i live in ${city}`
   );
 }
-
+//remembering the call and also 'this'
 testFunc.call(personTest, 'jakarta');
